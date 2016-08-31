@@ -35,13 +35,13 @@ message SignalAgglomUpdates {
 	message LocationUpdate {
 		string name = 1;  // "network", "gps", "fused" - only these 3 values (com.nianticlabs.location.NianticLocationManager.class)
 		int64 timestamp_ms = 2;
-		double altitude = 4;
-		double latitude = 13;
-		double longitude = 14;
-		double device_speed = 18;
-		double device_course = 20;
-		double horizontal_accuracy = 21;
-		double vertical_accuracy = 22;
+		float altitude = 4;
+		float latitude = 13;
+		float longitude = 14;
+		float device_speed = 18;
+		float device_course = 20;
+		float horizontal_accuracy = 21;
+		float vertical_accuracy = 22;
 		int32 provider_status = 26;
 		int64 floor = 27;
 		int32 location_type = 28;
